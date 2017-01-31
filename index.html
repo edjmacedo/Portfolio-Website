@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Puppy Portfolio</title>
+        <title>Edvan Macedo Portfolio</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet"> 
         <link rel="stylesheet" href="css/style.css">
@@ -54,9 +54,13 @@
                     <p>https://goo.gl/iBDXQI<p>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <img class="img-responsive" src="https://placebear.com/380/300" alt="featured work"/>
-                    <h3 class="text-uppercase">Sunflower</h3>
-                    <p>https://github.com/edvanmacedo/samples</p>
+                    <picture>
+                        <source srcset="images/samsungSchool_small.png" media="(max-width: 380px)">
+                        <source srcset="images/samsungSchool_medium.png" media="(max-width: 992px)">
+                        <img class="img-responsive" src="images/samsungSchool_large.png" alt="Samsung School Image" data-toggle="modal" data-target="#samsungSchool"/>
+                    </picture>                    
+                    <h3 class="text-uppercase">Samsung School</h3>
+                    <p>http://smbz.us/1axgRmY</p>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <img class="img-responsive" src="https://placebear.com/380/300" alt="featured work"/>
@@ -65,27 +69,52 @@
                 </div>
             </section>
         </div>
+        
+        <!--Ford Sync Modal -->
         <div class="modal fade" id="fordSync" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Ford Sync on Galaxy Gear</h4>
-                </div>
-                <div class="modal-body">
-                    <picture>
-                        <source srcset="images/SamsungGear_detail_small.png" media="(max-width: 450px)">
-                        <source srcset="images/SamsungGear_detail_medium.png" media="(max-width: 700px)">
-                        <img class="img-responsive" src="images/SamsungGear_detail_large.png" alt="Ford Sync Image on Galaxy gear" data-toggle="modal" data-target="#project1"/>
-                    </picture> 
-                    <div class="project-description">
-                        After parking and shutting the car off, drivers receive a prompt on their Samsung Gear smartwatch asking if they would like to log the parking spot, which is acquired from the vehicle’s GPS. If the vehicle is parked inside a parking garage, the driver can type the level, column and other location indicators into the watch interface. When returning to the vehicle, drivers can receive directions to navigate back to the parking spot using the watch. Drivers can help ensure their attentiveness by using the Gear smartwatch to set audible chimes and voice alerts at three-, five-, 10-, 15- or 20-minute intervals while on the road. Future versions of the app will vibrate the watch as an added way to help keep the driver alert.
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Ford Sync on Galaxy Gear</h4>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div class="modal-body">
+                        <picture>
+                            <source srcset="images/SamsungGear_detail_small.png" media="(max-width: 450px)">
+                            <source srcset="images/SamsungGear_detail_medium.png" media="(max-width: 700px)">
+                            <img class="img-responsive" src="images/SamsungGear_detail_large.png" alt="Ford Sync Image on Galaxy gear" data-toggle="modal" data-target="#project1"/>
+                        </picture> 
+                        <div class="project-description">
+                            After parking and shutting the car off, drivers receive a prompt on their Samsung Gear smartwatch asking if they would like to log the parking spot, which is acquired from the vehicle’s GPS. If the vehicle is parked inside a parking garage, the driver can type the level, column and other location indicators into the watch interface. When returning to the vehicle, drivers can receive directions to navigate back to the parking spot using the watch. Drivers can help ensure their attentiveness by using the Gear smartwatch to set audible chimes and voice alerts at three-, five-, 10-, 15- or 20-minute intervals while on the road. Future versions of the app will vibrate the watch as an added way to help keep the driver alert.
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!--Samsung School Modal -->
+        <div class="modal fade" id="samsungSchool" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Samsung School</h4>
+                    </div>
+                    <div class="modal-body">
+                        <picture>
+                            <source srcset="images/samsungSchool_detail_small.png" media="(max-width: 450px)">
+                            <source srcset="images/samsungSchool_detail_medium.png" media="(max-width: 700px)">
+                            <img class="img-responsive" src="images/samsungSchool_detail_large.png" alt="Samsung school detail" data-toggle="modal" data-target="#project1"/>
+                        </picture> 
+                        <div class="project-description">
+                            Samsung School offers a variety of interoperable technology packages to suit your educational needs. The full suite includes select Samsung Galaxy tablets for the teacher and each student, an interactive whiteboard and a wireless multifunction printer. Tying it all together is the Samsung School software, which provides a learning management system along with powerful interactive tools. 
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
