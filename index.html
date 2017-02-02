@@ -63,9 +63,13 @@
                     <p>http://smbz.us/1axgRmY</p>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <img class="img-responsive" src="https://placebear.com/380/300" alt="featured work"/>
-                    <h3 class="text-uppercase">Bokeh</h3>
-                    <p>https://github.com/edvanmacedo/samples</p>
+                    <picture>
+                        <source srcset="images/movieTrailers_small.png" media="(max-width: 380px)">
+                        <source srcset="images/movieTrailers_medium.png" media="(max-width: 992px)">
+                        <img class="img-responsive" src="images/movieTrailers_large.png" alt="Samsung School Image" data-toggle="modal" data-target="#movieTrailler"/>
+                    </picture>
+                    <h3 class="text-uppercase">Movie Traillers</h3>
+                    <p>https://github.com/edvanmacedo/Movie-Trailler-Website</p>
                 </div>
             </section>
         </div>
@@ -108,6 +112,30 @@
                         </picture> 
                         <div class="project-description">
                             Samsung School offers a variety of interoperable technology packages to suit your educational needs. The full suite includes select Samsung Galaxy tablets for the teacher and each student, an interactive whiteboard and a wireless multifunction printer. Tying it all together is the Samsung School software, which provides a learning management system along with powerful interactive tools. 
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Movie Trailler Modal-->
+        <div class="modal fade" id="movieTrailler" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Samsung School</h4>
+                    </div>
+                    <div class="modal-body">
+                        <picture>
+                            <source srcset="images/movieTrailers_detail_small.png" media="(max-width: 450px)">
+                            <source srcset="images/movieTrailers_detail_medium.png" media="(max-width: 700px)">
+                            <img class="img-responsive" src="images/movieTrailers_detail_large.png" alt="Samsung school detail" data-toggle="modal" data-target="#project1"/>
+                        </picture> 
+                        <div class="project-description">
+                            Website with huge movie list that allows to the user watch and fetch informations about your favorite movies.
                         </div>
                     </div>
                     <div class="modal-footer">
